@@ -18,29 +18,63 @@
     <link rel="stylesheet" href="~/css/site.css" />
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">PolisGarant</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-                        </li>
-                    </ul>
-                </div>
+<header>
+    
+    <style>
+        #polis-word {
+            text-transform: uppercase;
+            color: red;
+        }
+        #garant-word {
+            text-transform: uppercase;
+            color: blue;
+            margin-left: -5px;
+        }
+        .nav-tab {
+            text-transform: uppercase;
+            font-weight: bold;
+            /*margin: 0 10px;*/
+        }
+        /*.navbar-nav > .active > a {
+            background-color: lightgrey;
+            border-radius: 20px 5px;
+        }*/
+    </style>
+
+    <nav class="navbar navbar-expand-md navbar-toggleable-md  navbar-light bg-white border-bottom box-shadow mb-3">
+        <div class="container">
+           <div class="navbar-header">
+
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">
+                    <img src="~/img/pg-logo-64x64.png" width="30" height="30" class="d-inline-block align-top" alt="logo">
+                    <span id="polis-word">polis</span>
+                    <span id="garant-word">garant</span>
+                </a>
+               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                       aria-expanded="false" aria-label="Toggle navigation">
+                   <span class="navbar-toggler-icon"></span>
+               </button>
+           </div>
+            <div class="navbar-collapse collapse d-sm-inline-flex flex-md-row-reverse">
+                <ul class="nav navbar-nav flex-grow-1">
+                    <li class="nav-item">
+                        <a class="nav-link text-secondary nav-tab" asp-area="" asp-controller="Home" asp-action="Index">про нас</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-secondary nav-tab" asp-area="" asp-controller="Home" asp-action="Privacy">наші послуги</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-secondary nav-tab" asp-area="" asp-controller="Home" asp-action="Privacy">контакти</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-secondary nav-tab" asp-area="" asp-controller="Home" asp-action="Privacy">купити поліс</a>
+                    </li>
+                </ul>
             </div>
-        </nav>
-    </header>
+        </div>
+    </nav>
+</header>
     <div class="container">
-        <partial name="_CookieConsentPartial" />
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
@@ -48,7 +82,7 @@
 
     <footer class="border-top footer text-muted">
         <div class="container">
-            &copy; 2019 - PolisGarant - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            &copy; 2019 - PolisGarant
         </div>
     </footer>
 
