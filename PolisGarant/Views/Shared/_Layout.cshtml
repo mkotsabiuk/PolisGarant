@@ -13,8 +13,11 @@
               asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.min.css"
               asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute"
               crossorigin="anonymous"
-              integrity="sha256-eSi1q2PG6J7g7ib17yAaWMcrr5GrtohYChqibrV7PBE="/>
+              integrity="sha256-eSi1q2PG6J7g7ib17yAaWMcrr5GrtohYChqibrV7PBE=" />
     </environment>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <!-- Own styles-->
     <link rel="stylesheet" href="~/css/site.css" />
 </head>
 <body>
@@ -33,12 +36,8 @@
         .nav-tab {
             text-transform: uppercase;
             font-weight: bold;
-            /*margin: 0 10px;*/
         }
-        /*.navbar-nav > .active > a {
-            background-color: lightgrey;
-            border-radius: 20px 5px;
-        }*/
+
     </style>
 
     <nav class="navbar navbar-expand-sm navbar-toggleable-md  navbar-light bg-white border-bottom box-shadow mb-3">
@@ -72,7 +71,7 @@
                         </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-secondary nav-tab" asp-area="" asp-controller="Home" asp-action="Privacy">контакти</a>
+                        <a class="nav-link text-secondary nav-tab" asp-area="" asp-controller="Home" asp-action="Contacts">контакти</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-secondary nav-tab" asp-area="" asp-controller="Home" asp-action="Privacy">купити поліс</a>
