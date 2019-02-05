@@ -15,12 +15,17 @@ namespace PolisGarant.Controllers
             return View();
         }
 
-        public IActionResult Privacy()
+        public IActionResult Purchase()
         {
             return View();
         }
 
         public IActionResult Contacts()
+        {
+            return View();
+        }
+
+        public IActionResult Services()
         {
             return View();
         }

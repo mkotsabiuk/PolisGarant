@@ -18,68 +18,89 @@
         vertical-align:middle;
         text-align: center;
     }
+    div.container h1.jumbotron-heading{
+        text-transform: capitalize;
+    }
+    span.display-1:first-child  {
+        text-transform: capitalize;
+        color: red;
+    }
+
+    span.display-1:last-child {
+        text-transform: capitalize;
+        color: blue;
+    }
 </style>
 <main role="main">
     <section class="text-center">
         <div class="container">
-            <h1 class="jumbotron-heading">Polis Garant</h1>
+            <h1 class="jumbotron-heading">
+                <span class="display-1">polis</span>
+                <span class="display-1">garant</span>
+            </h1>
             <p class="lead text-muted">Напишіть нам українською, російською, чеською чи англійською мовами або зателефонуйте, а ми надамо Вам допомогу </p>
             <p>
-                <a href="#" class="btn btn-primary my-2">Купити поліс</a>
-                <a href="#" class="btn btn-outline-primary my-2">Контакти</a>
+                <a asp-area="" asp-controller="Home" asp-action="Purchase" class="btn btn-primary my-2">Купити поліс</a>
+                <a asp-area="" asp-controller="Home" asp-action="Contacts" class="btn btn-outline-primary my-2">Контакти</a>
             </p>
         </div>
     </section>
 
-    <div class="album py-5 bg-light">
+    <div class="album py-5">
         <div class="container">
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-md-6 col-sm-12">
                     <div class="card mb-4 box-shadow">
                         <img class="card-img-top" src="~/img/insurance.png" alt="Insurance">
                         <div class="card-body">
-                            <p class="card-text">Усі види страхування тільки від акредитованих страхових компаній Чехії. Дія страхових полісів на усій території Чехії, а також у країнах Шенгенської зони</p>
+                            <p class="card-text">Усі види страхування тільки від акредитованих страхових компаній Чехії. Дія страхових полісів на усій території Чехії, а також у країнах Шенгенської зони.</p>
                             <div class="d-flex justify-content-between align-items-center">
                                 <div class="btn-group">
                                     <button type="button" class="btn btn-md btn-outline-primary">Більше</button>
-                                    @*<button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>*@
                                 </div>
-                                @*<small class="text-muted">9 mins</small>*@
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-6 col-sm-12">
                     <div class="card mb-4 box-shadow">
                         <img class="card-img-top" src="~/img/visa.png" alt="Visa">
                         <div class="card-body">
-                            <p class="card-text">Гарантована візова підтримка, довідки про несудимість з Польщі та України, їх завірені переклади</p>
+                            <p class="card-text">Гарантована візова підтримка, довідки про несудимість з Польщі та України, їх завірені переклади.</p>
                             <div class="d-flex justify-content-between align-items-center">
                                 <div class="btn-group">
                                     <button type="button" class="btn btn-md btn-outline-primary">Більше</button>
-                                    @*<button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>*@
                                 </div>
-                                @*<small class="text-muted">9 mins</small>*@
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-6 col-sm-12">
                     <div class="card mb-4 box-shadow  text-center">
                         <img class="card-img-top" src="~/img/diploma.png" alt="Diploma">
                         <div class="card-body">
-                            <p class="card-text">Легалізація документів про освіту, нострифікація у Чехії</p>
+                            <p class="card-text">Легалізація документів про освіту, нострифікація у Чехії. Передбачає повний комплекс заходів щодо визнання документів про освіту іноземних громадян.</p>
                             <div class="d-flex justify-content-between align-items-center">
                                 <div class="btn-group">
                                     <button type="button" class="btn btn-md btn-outline-primary">Більше</button>
-                                    @*<button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>*@
                                 </div>
-                                @*<small class="text-muted">9 mins</small>*@
                             </div>
                         </div>
                     </div>
                 </div>
-
+                <div class="col-md-6 col-sm-12">
+                    <div class="card mb-4 box-shadow  text-center">
+                        <img class="card-img-top" src="~/img/job.png" alt="Diploma">
+                        <div class="card-body">
+                            <p class="card-text">Індивідуальний пошук і підбір робочого місця під ваші побажання і кваліфікацію - від робітничих професій до висококласних фахівців у всіх областях</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-md btn-outline-primary">Більше</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
