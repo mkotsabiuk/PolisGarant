@@ -1,4 +1,47 @@
 ﻿@{
     ViewData["Title"] = "Довідки про несудимість";
 }
-<h1>Довідки про несудимість</h1>
+<style>
+    .jumbotron p {
+        text-indent: 30px;
+    }
+
+    .jumbotron h5 {
+        text-indent: 30px;
+    }
+    ul.lead li {
+        list-style-type: none;
+    }
+</style>
+<div class="jumbotron pt-4 pb-4">
+    <h1 class="display-4 text-center mb-4">Довідки про несудимість з Польщі</h1>
+    <p class="lead text-justify d-block">
+        Для отримання довідки про несудимість з Польщі Вам необхідно:
+        <ul class="lead text-justify">
+            <li class="pl-md-5">
+                1. Вислати нам електронною поштою відскановану першу сторінку закордонного паспорта
+            </li>
+            <li class="pl-md-5">
+                2. Вказати адресу, на котрій ви прописані
+            </li>
+            <li class="pl-md-5">
+                3. Вказати імена та прізвища батьків
+            </li>
+            <li class="pl-md-5">
+                4. Вказати дівоче прізвище матері
+            </li>
+        </ul>
+    </p>
+    <p class="lead text-justify d-block">
+        Вартість довідки із завіреним перекладом на чеську мову складає 1500 корун чеських.
+    </p>
+    <hr class="my-4">
+    <h5 class="mb-3">
+        Більше дізнатися про умови отримання довідки ви можете
+        <a asp-area="" asp-controller="Home" asp-action="Contacts">
+            написавши
+        </a>
+        нам
+     </h5>
+     <a class="btn btn-success btn-md" href="#" role="button">Купити онлайн</a>
+</div>
