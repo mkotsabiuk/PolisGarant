@@ -24,8 +24,7 @@
     <header>
         <style>
             body {
-                background-image: url("/img/wall.jpg");
-                background-repeat: no-repeat;
+                background: url("/img/wall.jpg") no-repeat center center;
                 background-attachment: fixed;
                 background-size: cover;
             }
@@ -33,13 +32,11 @@
                 text-transform: uppercase;
                 color: red;
             }
-
             #garant-word {
                 text-transform: uppercase;
                 color: blue;
                 margin-left: -5px;
             }
-
             .nav-tab {
                 text-transform: uppercase;
                 font-weight: bold;
@@ -66,6 +63,11 @@
             }
             footer.footer {
                 background-color: #f8f9fa;
+            }
+            @@media screen and (max-width: 768px) {
+                ul li.active {
+                    background-color: transparent;
+                }
             }
         </style>
         <div class="container-fluid border-bottom box-shadow mb-3">
