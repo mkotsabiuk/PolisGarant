@@ -21,14 +21,25 @@
     div.container h1.jumbotron-heading{
         text-transform: capitalize;
     }
-    span.display-1:first-child  {
+    /*h1.jumbotron-heading {
+        padding-top: 40px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }*/
+    span.display-1:first-child {
         text-transform: capitalize;
+        font-weight: bold;
         color: red;
     }
 
     span.display-1:last-child {
         text-transform: capitalize;
+        font-weight: bold;
         color: blue;
+    }
+    div.container p.lead {
+        background-color: #f8f9fa;
+        font-weight: bold;
     }
 </style>
 <main role="main">
@@ -40,8 +51,8 @@
             </h1>
             <p class="lead text-muted">Напишіть нам українською, російською, чеською чи англійською мовами або зателефонуйте, а ми надамо Вам допомогу </p>
             <p>
-                <a asp-area="" asp-controller="Home" asp-action="Purchase" class="btn btn-primary my-2">Купити поліс</a>
-                <a asp-area="" asp-controller="Home" asp-action="Contacts" class="btn btn-outline-primary my-2">Контакти</a>
+                <a asp-area="" asp-controller="Home" asp-action="Purchase" class="btn btn-success my-2">Купити поліс</a>
+                <a asp-area="" asp-controller="Home" asp-action="Contacts" class="btn btn-primary my-2">Контакти</a>
             </p>
         </div>
     </section>
