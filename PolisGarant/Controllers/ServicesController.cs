@@ -12,38 +12,46 @@ namespace PolisGarant.Controllers
     {
         public IActionResult Career()
         {
+            ViewBag.Tab = "Services";
             return View();
         }
 
         public IActionResult CarInsurance()
         {
+            ViewBag.Tab = "Services";
             return View();
         }
         public IActionResult ComplexInsurance()
         {
+            ViewBag.Tab = "Services";
             return View();
         }
         public IActionResult Diploma()
         {
+            ViewBag.Tab = "Services";
             return View();
         }
 
         public IActionResult PropertyInsurance()
         {
+            ViewBag.Tab = "Services";
             return View();
         }
 
         public IActionResult StandardInsurance()
         {
+            ViewBag.Tab = "Services";
             return View();
         }
         public IActionResult TravelInsurance()
         {
+            ViewBag.Tab = "Services";
             return View();
         }
 
         public IActionResult Certificates()
         {
+            ViewBag.Tab = "Services";
             return View();
         }
 
