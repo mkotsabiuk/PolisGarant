@@ -24,7 +24,9 @@
     <header>
         <style>
             body {
-                background: url("/img/wall.jpg") no-repeat center center;
+                background: url("/img/wall.jpg") no-repeat;
+                background-position-x: center;
+                background-position-y: top;
                 background-attachment: fixed;
                 background-size: cover;
             }
@@ -73,6 +75,11 @@
                 ul li.active {
                     background-color: transparent;
                 }
+                /*body {
+                    background: url("/img/wall.jpg") no-repeat center center;
+                    background-attachment: fixed;
+                    background-size: contain;
+                }*/
             }
         </style>
         <div class="container-fluid border-bottom box-shadow mb-3">
