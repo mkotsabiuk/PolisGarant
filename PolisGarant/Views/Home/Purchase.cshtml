@@ -1,6 +1,124 @@
 ﻿@{
     ViewData["Title"] = "Купити";
 }
+<style>
+    @@import url('https://fonts.googleapis.com/css?family=Neucha');
+    h3 {
+        font-family: 'Neucha', sans-serif;
+    }
 
+    .box {
+        padding: 60px 0px;
+    }
 
-<p>Сайт в процесі розробки. Скоро все буде)</p>
+    .box-part {
+        background: #FFF;
+        border-radius: 10px;
+        padding: 30px 10px;
+        margin: 30px 0px;
+        border-color: #007bff;
+        border-width: 1px;
+        border-style: solid;
+    }
+
+    .box-part:hover {
+        border-width: 0;
+        background: #4183D7;
+    }
+    .box-part .title{
+        min-height: 60px;
+        align-items: center;
+        justify-content: center;
+    }
+    .box-part .text{
+        min-height: 140px;
+        align-items: center;
+        justify-content: center;
+    }
+    .box-part:hover .fa,
+    .box-part:hover .title,
+    .box-part:hover .text,
+    .box-part:hover a {
+        color: #FFF;
+        -webkit-transition: all 1s ease-out;
+        -moz-transition: all 1s ease-out;
+        -o-transition: all 1s ease-out;
+        transition: all 1s ease-out;
+    }
+
+    .text {
+        margin: 20px 0px;
+    }
+
+    .fa {
+        color: #4183D7;
+    }
+</style>
+
+<div class="box">
+    <div class="container">
+        <div class="row d-flex justify-content-center">
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                <div class="box-part text-center">
+                    <div class="title d-flex">
+                        <h3>Страхування "Стандарт"</h3>
+                    </div>
+                    <div class="text d-flex">
+                        <span>Передбачає надання необхідної та невідкладної медичної допомоги іноземним громадянам, що перебувають на території Чеської республіки.</span>
+                    </div>
+                    <a class="btn btn-link" href="#">Купити</a>
+                    <a class="btn btn-link" asp-controller="Services" asp-action="StandardInsurance">Дізнатися більше</a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                <div class="box-part text-center">
+                    <div class="title d-flex">
+                        <h3>Комплексне страхування</h3>
+                    </div>
+                    <div class="text d-flex">
+                        <span>Передбачає розширені можливості надання медичної допомоги  ніж це передбачено за програмою страхування «Стандарт».</span>
+                    </div>
+                    <a class="btn btn-link" href="#">Купити</a>
+                    <a class="btn btn-link" asp-controller="Services" asp-action="ComplexInsurance">Дізнатися більше</a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                <div class="box-part text-center">
+                    <div class="title d-flex">
+                        <h3>Туристичне страхування</h3>
+                    </div>
+                    <div class="text d-flex">
+                        <span>Страховий поліс передбачає комплекс послуг страхування осіб, котрі збираються у короткострокову або довгострокову подорож за кордон.</span>
+                    </div>
+                    <a class="btn btn-link" href="#">Купити</a>
+                    <a class="btn btn-link" asp-controller="Services" asp-action="TravelInsurance">Дізнатися більше</a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                <div class="box-part text-center">
+                    <div class="title d-flex">
+                        <h3>Автострахування</h3>
+                    </div>
+                    <div class="text d-flex">
+                        <span>Передбачає відшкодування шкоди, заподіяної життю, здоров'ю та майну потерпілих, при експлуатації транпортних засобів на території Чехії</span>
+                    </div>
+                    <a class="btn btn-link" href="#">Купити</a>
+                    <a class="btn btn-link"  asp-controller="Services" asp-action="CarInsurance">Дізнатися більше</a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                <div class="box-part text-center">
+                    <div class="title d-flex">
+                        <h3>Страхування жила та нерухомості</h3>
+                    </div>
+                    <div class="text d-flex">
+                        <span>Передбачає швидко та недорого захистити власне нерухоме майно з таким переліком ризиків, що підходить саме вам.</span>
+                    </div>
+                    <a class="btn btn-link" href="#">Купити</a>
+                    <a class="btn btn-link" asp-controller="Services" asp-action="PropertyInsurance">Дізнатися більше</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
