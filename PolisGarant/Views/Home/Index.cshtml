@@ -39,6 +39,12 @@
         font-size: 25px;
         background-color: snow;
     }
+    #btn-buy{
+        width: 150px;
+    }
+    #btn-contact{
+        width: 150px;
+    }
 </style>
 <main role="main">
     <section class="text-center">
@@ -49,8 +55,8 @@
             </h1>
             <span id="subtitle">Напишіть нам українською, російською, чеською чи англійською мовами або зателефонуйте, а ми надамо Вам допомогу </span>
             <p class="mt-3">
-                <a asp-area="" asp-controller="Home" asp-action="Purchase" class="btn btn-success my-2">Купити поліс</a>
-                <a asp-area="" asp-controller="Home" asp-action="Contacts" class="btn btn-primary my-2">Контакти</a>
+                <a asp-area="" asp-controller="Home" asp-action="Purchase" class="btn btn-success my-2 btn-lg" id="btn-buy">Купити поліс</a>
+                <a asp-area="" asp-controller="Home" asp-action="Contacts" class="btn btn-primary my-2 btn-lg" id="btn-contact">Контакти</a>
             </p>
         </div>
     </section>
