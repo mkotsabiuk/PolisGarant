@@ -12,21 +12,19 @@ namespace PolisGarant.Controllers
     {
         public IActionResult Index()
         {
+            ViewBag.Tab = "About";
             return View();
         }
 
         public IActionResult Purchase()
         {
+            ViewBag.Tab = "Purchase";
             return View();
         }
 
         public IActionResult Contacts()
         {
-            return View();
-        }
-
-        public IActionResult Services()
-        {
+            ViewBag.Tab = "Contacts";
             return View();
         }
 

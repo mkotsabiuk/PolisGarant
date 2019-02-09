@@ -23,6 +23,12 @@
 <body>
     <header>
         <style>
+            body {
+                background-image: url("/img/wall.jpg");
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-size: cover;
+            }
             #polis-word {
                 text-transform: uppercase;
                 color: red;
@@ -54,6 +60,13 @@
             .dropdown-menu .dropdown-item:active {
                 background-color: #428bca;
             }
+            ul li.active {
+                background-color: #dedddd;
+                border-radius: 50px;
+            }
+            footer.footer {
+                background-color: #f8f9fa;
+            }
         </style>
         <div class="container-fluid border-bottom box-shadow mb-3">
             <div class="row">
@@ -68,10 +81,10 @@
                     </button>
                     <div id="navbarContent" class="collapse navbar-collapse">
                         <ul class="nav navbar-nav col-12 justify-content-around">
-                            <li class="nav-item active">
+                            <li class="nav-item @(ViewBag.Tab == "About" ? "active" : "")">
                                 <a class="nav-link text-secondary nav-tab" asp-area="" asp-controller="Home" asp-action="Index">про нас</a>
                             </li>
-                            <li class="nav-item dropdown">
+                            <li class="nav-item dropdown @(ViewBag.Tab == "Services" ? "active" : "")">
                                 <a class="nav-link text-secondary nav-tab dropdown-toggle" id="navbarDropdown" role="button"
                                    data-toggle="dropdown" aria-expanded="false" aria-haspopup="true">послуги</a>
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -85,11 +98,11 @@
                                     <a class="dropdown-item" asp-area="" asp-controller="Services" asp-action="Certificates">Довідки про несудимість з Польщі</a>
                                 </div>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-secondary nav-tab" asp-area="" asp-controller="Home" asp-action="Contacts">контакти</a>
-                            </li>
-                            <li class="nav-item">
+                            <li class="nav-item @(ViewBag.Tab == "Purchase" ? "active" : "")">
                                 <a class="nav-link text-secondary nav-tab" asp-area="" asp-controller="Home" asp-action="Purchase">купити поліс</a>
+                            </li>
+                            <li class="nav-item @(ViewBag.Tab == "Contacts" ? "active" : "")">
+                                <a class="nav-link text-secondary nav-tab" asp-area="" asp-controller="Home" asp-action="Contacts">контакти</a>
                             </li>
                         </ul>
                     </div>
