@@ -12,11 +12,15 @@
                     <form asp-action="SendMessage" asp-controller="Home" method="post">
                         <div class="form-group">
                             <label for="name">Ім'я</label>
-                            <input type="text" name="name" class="form-control" id="name" aria-describedby="emailHelp" placeholder="Введіть ім'я" required>
+                            <input type="text" name="name" class="form-control" id="name" placeholder="Введіть ім'я" required>
                         </div>
                         <div class="form-group">
                             <label for="email">Електронна пошта</label>
-                            <input type="email" name="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Введіть електронну пошту" required>
+                            <input type="email" name="email" class="form-control" id="email" placeholder="Введіть електронну пошту" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="number">Мобільний номер (необов'язково)</label>
+                            <input type="tel" name="number" class="form-control" id="number" placeholder="Введіть мобільний номер (для зв'язку з вами)">
                         </div>
                         <div class="form-group">
                             <label for="message">Повідомлення</label>
