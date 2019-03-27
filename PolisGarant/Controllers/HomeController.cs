@@ -36,6 +36,7 @@ namespace PolisGarant.Controllers
             var messageForSending = new MimeMessage();
             messageForSending.From.Add(new MailboxAddress("Site PolisGarant", "polisgarant@email.cz"));
             messageForSending.To.Add(new MailboxAddress("PolisGarant", "polisgarant@email.cz"));
+            messageForSending.To.Add(new MailboxAddress("PolisGarant", "tysdrib@ukr.net"));
             messageForSending.Subject = "PolisGarant purchase";
             message = $"User {name}  {email} {number} sent you a message:\n\n" + message;
             messageForSending.Body = new TextPart("plain")
