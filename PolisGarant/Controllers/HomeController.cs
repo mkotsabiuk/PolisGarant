@@ -24,8 +24,38 @@ namespace PolisGarant.Controllers
             return View();
         }
 
-        public IActionResult Contacts()
+        public IActionResult Contacts(string serviceType)
         {
+            switch (serviceType)
+            {
+                case "standart":
+                    ViewBag.Message = "Мене зацікавило страхування \"Стандарт\". Прошу зв'язатися зі мною для подальшої взаємодії.";
+                    break;
+                case "complex":
+                    ViewBag.Message = "Мене зацікавило комплексне страхування. Прошу зв'язатися зі мною для подальшої взаємодії.";
+                    break;
+                case "travel":
+                    ViewBag.Message = "Мене зацікавило туристичне страхування. Прошу зв'язатися зі мною для подальшої взаємодії.";
+                    break;
+                case "car":
+                    ViewBag.Message = "Мене зацікавило автострахування. Прошу зв'язатися зі мною для подальшої взаємодії.";
+                    break;
+                case "property":
+                    ViewBag.Message = "Мене зацікавило страхування житла та нерухомості. Прошу зв'язатися зі мною для подальшої взаємодії.";
+                    break;
+                case "document":
+                    ViewBag.Message = "Мене зацікавила нострифікація документів. Прошу зв'язатися зі мною для подальшої взаємодії.";
+                    break;
+                case "job":
+                    ViewBag.Message = "Мене зацікавило працевлаштування в Чехії. Прошу зв'язатися зі мною для подальшої взаємодії.";
+                    break;
+                case "certificates":
+                    ViewBag.Message = "Мене зацікавили довідки про несудимість з Польщі. Прошу зв'язатися зі мною для подальшої взаємодії.";
+                    break;
+                default:
+                    ViewBag.Message = "";
+                    break;
+            }
             ViewBag.Tab = "Contacts";
             return View();
         }
