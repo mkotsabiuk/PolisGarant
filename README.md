@@ -4,6 +4,7 @@ Site for advertising services related to insurance, career and documents stratif
 Wrote using `dotnet core 2.2 ASP.NET MVC`
 
 ## Demo
+![](PolisGarant/wwwroot/img/polisgarant.gif)
 
 ## Run it locally
 
