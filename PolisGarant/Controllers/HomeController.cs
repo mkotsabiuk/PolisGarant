@@ -63,33 +63,6 @@ namespace PolisGarant.Controllers
         [HttpPost]
         public IActionResult SendMessage(string name, string email, string message, string number)
         {
-            var messageForSending = new MimeMessage();
-            messageForSending.From.Add(new MailboxAddress("Site PolisGarant", "polisgarant@email.cz"));
-            messageForSending.To.Add(new MailboxAddress("PolisGarant", "polisgarant@email.cz"));
-            messageForSending.To.Add(new MailboxAddress("PolisGarant", "tysdrib@ukr.net"));
-            messageForSending.Subject = "PolisGarant purchase";
-            message = $"User {name}  {email} {number} sent you a message:\n\n" + message;
-            messageForSending.Body = new TextPart("plain")
-            {
-                Text = message
-            };
-
-            try
-            {
-                using (var client = new SmtpClient())
-                {
-                    client.Connect("smtp.seznam.cz", 465, true);
-                    client.Authenticate("polisgarant@email.cz", "pg2019");
-                    client.Send(messageForSending);
-                    client.Disconnect(true);
-                }
-            }
-            catch (Exception e)
-            {
-                return View(@"~/Views/Home/Contacts.cshtml");
-            }
-          
-
             return View(@"~/Views/Home/Index.cshtml");
         }
 
