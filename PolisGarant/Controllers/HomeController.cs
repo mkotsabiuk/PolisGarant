@@ -10,9 +10,6 @@ using PolisGarant.Models;
 
 namespace PolisGarant.Controllers
 {
-    /// <summary>
-    /// Home controller.
-    /// </summary>
     public class HomeController : Controller
     {
         public IActionResult Index()
@@ -64,7 +61,7 @@ namespace PolisGarant.Controllers
         }
 
         [HttpPost]
-        public IActionResult SendMessage()
+        public IActionResult SendMessage(string name, string email, string message, string number)
         {
             return View(@"~/Views/Home/Index.cshtml");
         }
